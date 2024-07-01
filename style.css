@@ -21,6 +21,10 @@ body {
     background-color: var(--white);
 }
 
+h1 {
+    color: var(--head);
+}
+
 /* navbar */
 .navbar {
     position: absolute;
