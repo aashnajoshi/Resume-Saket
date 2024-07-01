@@ -40,6 +40,12 @@ body {
     padding: var(--pad);
     color: var(--black);
     text-decoration: none;
+    font-weight: 550;
+}
+
+.navbar a:hover {
+    cursor: pointer;
+    color: var(--prim);
 }
 
 .navbar-right a {
