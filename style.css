@@ -72,8 +72,9 @@ h1 {
 .info {
     display: flex;
     justify-content: space-evenly;
+    gap: 50px;
     align-items: center;
-    margin: 5rem 0;
+    margin: 5rem;
 
 }
 
@@ -90,6 +91,12 @@ h1 {
     font-size: 1.5em;
 }
 
-#social i:hover {
+#socials i:hover,
+#socials img:hover {
     color: var(--prim);
+    cursor: pointer;
+}
+
+.intro p {
+    width: 50px
 }
