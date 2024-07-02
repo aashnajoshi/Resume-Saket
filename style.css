@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    cursor: default;
+    font-family: 'Playfair Display', serif;
     font-optical-sizing: auto;
 }
 
@@ -23,6 +25,8 @@ body {
 
 h1 {
     color: var(--head);
+    font-size: 40px;
+    font-weight: 600;
 }
 
 /* navbar */
@@ -52,21 +56,20 @@ h1 {
     color: var(--prim);
 }
 
-.navbar-right a {
+button {
     background-color: var(--prim);
     color: var(--white);
-}
-
-.navbar-right a:hover {
-    background-color: var(--sec);
-    color: var(--white);
-}
-
-.contact-button {
-    margin: 0 1rem;
+    margin: var(--pad);
+    padding: var(--pad);
     text-decoration: none;
     border: .05rem solid transparent;
-    border-radius: .5rem;
+    border-radius: var(--pad);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--sec);
+    color: var(--white);
 }
 
 .info {
@@ -79,7 +82,7 @@ h1 {
 }
 
 #socials {
-    gap: .5rem;
+    gap: var(--pad);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
